@@ -1,0 +1,21 @@
+.PhotographySubjectList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; // רווח בין הכרטיסיות
+  justify-content: center;
+}
+
+.PhotographySubjectItem {
+  flex: 1 1 calc(33.333% - 16px); // כרטיסיה תתפוס שליש מהרוחב הזמין עם מרווח של 16px מכל צד
+  box-sizing: border-box; // כדי שהמרווח ייכלל בחישוב הרוחב
+  margin-bottom: 16px; // מרווח תחתון בין השורות
+}
+
+.hover-overlay .mask {
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
+
+.hover-overlay:hover .mask {
+  opacity: 1;
+}

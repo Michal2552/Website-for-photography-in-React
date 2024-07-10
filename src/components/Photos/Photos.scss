@@ -1,0 +1,45 @@
+/* src/components/Photos/Photos.scss */
+.photos {
+    padding: 10px;
+  }
+  
+  .my-masonry-grid {
+    display: flex;
+    margin-left: -10px; /* gutter size offset */
+    width: auto;
+  }
+  
+  .my-masonry-grid_column {
+    padding-left: 10px; /* gutter size */
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .photo-item {
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+  }
+  
+  .photo-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .photo-item p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+  }
+  
